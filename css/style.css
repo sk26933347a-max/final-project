@@ -254,6 +254,9 @@ h1{
 .top-design{
     width: 258px;
     height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
 .top-design h2{
     font-size: 16px;
@@ -267,8 +270,33 @@ h1{
     font-weight: bold;
     color: #404040;
 }
+.top-design span{
+    font-weight: 200;
+    font-size: 28px;
+    color: #404040;
+}
+.bottom-design{
+    width: 258px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
 .bottom-design p{
     font-size: 16px;
     font-weight: 500;
+    color: #404040;
+}
+.bottom-design a{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+    background: #404040;
+    color: #FFFFFF;
+    padding: 12px;
+    border: 1px solid;
+}
+.bottom-design a:hover{
+    background: #FFFFFF;
     color: #404040;
 }
