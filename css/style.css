@@ -87,6 +87,7 @@ body{
 .index{
     width: 1920px;
     height: 4738px;
+    background: #FDF7F1;
 }
 
 .top-menu{
@@ -271,7 +272,7 @@ h1{
     color: #404040;
 }
 .top-design span{
-    font-weight: 200;
+    font-weight: 250;
     font-size: 28px;
     color: #404040;
 }
@@ -299,4 +300,227 @@ h1{
 .bottom-design a:hover{
     background: #FFFFFF;
     color: #404040;
+}
+.projects{
+    width: 1920px;
+    height: 1647px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+}
+.projects-container{
+    width: 1296px;
+    height: 1487px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects-container-title{
+    width: 1296px;
+    height: 120px;
+    text-align: center;
+}
+.projects-container-title h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #404040;
+    font-weight: bold;
+}
+.projects-container-title p{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #404040;
+    font-weight: bold;
+}
+.projects-container-list{
+    width: 1296px;
+    height: 1239px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.projects-card{
+    width: 1296px;
+    max-width: 1296px;
+    height: 397px;
+    gap: 24px;
+    padding: 28px;
+}
+.projects-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 386px;
+    max-width: 386px;
+    height: 341px;
+    background: #FDF7F1;
+    padding: 40px;
+    gap: 12px;
+    text-align: center;
+}
+.projects-card-text h1{
+    font-size: 16px;
+    font-weight: 500;
+    color: #404040;
+}
+.projects-card-text h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-weight: bold;
+    color: #404040;
+}
+.projects-card-text p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #404040;
+}
+.gotoprojects a{
+    display: block;
+    height: 48px;
+    background: #404040;
+    padding: 12px 24px;
+    gap: 8px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: 1px solid #404040;
+}
+.gotoprojects a:hover{
+    background: #FFFFFF;
+    color: #404040;
+}
+.pc01{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_1.png?raw=true);
+}
+.pc02{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_2.png?raw=true);
+}
+.pc03{
+    background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_3.png?raw=true);
+}
+
+.projects-container-link a{
+    height: 48px;
+    background: #404040;
+    padding: 12px 24px;
+    gap: 8px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: 1px solid #404040;
+}
+.projects-container-link a:hover{
+    background: #FFFFFF;
+    color: #404040;
+}
+.blogs{
+    width: 1920px;
+    height: 749px;
+    padding: 80px 40px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blogs-top{
+    width: 1296px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blogs-top h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #404040;
+    font-weight: bold;
+}
+.blogs-top p{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #404040;
+    font-weight: bold;
+}
+.blogs-top-link a{
+    height: 48px;
+    background: #FFFFFF;
+    padding: 12px 24px;
+    gap: 8px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #404040;
+    font-weight: 500;
+    border: 1px solid #404040;
+}
+.blogs-top-link a:hover{
+    background: #404040;
+    color: #FFFFFF;
+}
+.blogs-container{
+    width: 1296px;
+    height: 429px;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-card{
+    width: 416px;
+    height: 429px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.blog-card-text{
+    width: 416px;
+    height: 177px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog-card-text h1{
+    font-size: 16px;
+    font-weight: 500;
+    color: #404040;
+}
+.blog-card-text p{
+    font-size: 24px;
+    font-weight: 700;
+    font-weight: bold;
+    color: #404040;
+}
+.blog-card-date{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #404040;
+}
+.vs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #404040;
+    gap: 12px;
+}
+.vs p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.vs span{
+    font-size: 20px;
+    font-weight: 250;
 }
