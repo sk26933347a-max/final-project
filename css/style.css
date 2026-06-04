@@ -524,3 +524,99 @@ h1{
     font-size: 20px;
     font-weight: 250;
 }
+.subscription{
+    width: 1920px;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+       
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true);
+}
+.subscription-container{
+    width: 1296px;
+    height: 440px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.subscription-container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 746px;
+    height: 440px; 
+    gap: 24px; 
+    padding: 80px 40px;
+}
+.subscription-top-design{
+    width: 666px;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+.subscription-top-design h1{
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.subscription-top-design h2{
+    font-size: 80px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.subscription-top-design p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.subscription-bottom-design{
+    width: 666px;
+    height: 64px;
+    border-radius: 40px;
+    border: 1px solid #FFFFFF;
+    padding: 8px;
+    gap: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscription-label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 12px 24px;
+    gap: 2px;
+    background: rgba(0,0,0,0);
+    border: none;
+    width: 555px;
+    height: 100%;
+}
+.subscription-label::placeholder{
+    color: #FFFFFF;
+    opacity: 1;
+}
+.email-enter a{
+    height: 48px;
+    background: #FFFFFF;
+    padding: 12px 24px;
+    gap: 8px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: #404040;
+    font-weight: 500;
+    border: 1px solid #404040;
+}
+.email-enter a:hover{
+    background: #404040;
+    color: #FFFFFF;
+}
