@@ -56,50 +56,26 @@ body{
     font-weight: 500;
     font-weight: medium;
 }
-@media (max-width: 768px) {
-    .index{
-        width: 100%;
-        height: auto;
-    }
-    .top-menu{
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 12px 20px;
-    }
-    .top-menu-content{
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        gap: 12px;
-    }
-    .profile{
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 12px 20px;
-    }
-    .profile-content{
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        gap: 12px;
-    }
-}
+
 .index{
     width: 1920px;
-    height: 4738px;
+
     background: #FDF7F1;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .top-menu{
-    width: 1920px;
-    height: 64px;
+    width: 100%;
+
     background-color: #FDF7F1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px 40px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 h1{
     font-size: 28px;
@@ -125,8 +101,8 @@ h1{
 }
 
 .top-menu-content{
-    width: 1296px;
-    height: 40px;
+    width: 100%;
+    max-width: 1296px;
     background-color: #FDF7F1;
     display: flex;
     justify-content: space-between;
@@ -135,13 +111,13 @@ h1{
     gap: 24px;
 }
 .profile{
-    width: 1920px;
+    width: 100%;
     height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 40px;
-    gap: 24px;
+    padding: 0 40px;
+    gap: 10px;
     background: #FDF7F1;
 }
 
@@ -149,15 +125,18 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1296px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
+    max-width: 1296px;
+    gap: 24px;
 }
 .profile-title{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 526px;
-    height: 376px;
+    width: 100%;
+    max-width: 526px;
+    gap: 60px;
 }
 .profile-title h2{
     font-size: 80px;
@@ -177,11 +156,9 @@ h1{
     align-items: center;
     gap: 24px;
     background: #FDF7F1;
-    width: 526px;  
-    height: 48px;
+    width: 100%;  
 }
 .profile-title-link a{
-    height: 48px;
     background: #FDF7F1;
     padding: 12px 24px;
     gap: 8px;
@@ -203,27 +180,26 @@ h1{
     justify-content: space-between;
     gap: 24px;
     background: #FDF7F1;
-    width: 526px;
-    height: 268px;
+    width: 100%;
 }
 .services{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1920px;
-    height: 494px;
+    width: 100%;
+    padding: 80px 40px;
     background: #24140B;
 }
 .services-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1296px;
-    height: 334px;
+    width: 100%;
+    max-width: 1296px;
+    gap: 40px;
 }
 .services-content-title{
-    width: 1296px;
-    height: 120px;
+    width: 100%;
 }
 .services-content-title h2{
     font-size: 16px;
@@ -241,12 +217,12 @@ h1{
 .services-content-list{
     display: flex;
     justify-content: space-between;
-    width: 1296px;
-    height: 174px;
+    width: 100%;
+    max-width: 1296px;
+    gap: 24px;
 }
 .service-card{
-    width: 306px;
-    height: 174px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,8 +231,8 @@ h1{
     gap: 12px;
 }
 .top-design{
-    width: 258px;
-    height: 66px;
+    width: 100%;
+    gap: 12px;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -279,8 +255,8 @@ h1{
     color: #404040;
 }
 .bottom-design{
-    width: 258px;
-    height: 48px;
+    width: 100%;
+    gap: 12px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -304,24 +280,23 @@ h1{
     color: #404040;
 }
 .projects{
-    width: 1920px;
-    height: 1647px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px 40px;
 }
 .projects-container{
-    width: 1296px;
-    height: 1487px;
+    width: 100%;
+    max-width: 1296px;
+    gap: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 .projects-container-title{
-    width: 1296px;
-    height: 120px;
+    width: 100%;
     text-align: center;
 }
 .projects-container-title h2{
@@ -338,26 +313,24 @@ h1{
     font-weight: bold;
 }
 .projects-container-list{
-    width: 1296px;
-    height: 1239px;
+    width: 100%;
+    gap: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .projects-card{
-    width: 1296px;
+    width: 100%;
     max-width: 1296px;
-    height: 397px;
-    gap: 24px;
     padding: 28px;
+    gap: 24px;    
 }
 .projects-card-text{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 386px;
+    width: 100%;
     max-width: 386px;
-    height: 341px;
     background: #FDF7F1;
     padding: 40px;
     gap: 12px;
@@ -381,7 +354,6 @@ h1{
 }
 .gotoprojects a{
     display: block;
-    height: 48px;
     background: #404040;
     padding: 12px 24px;
     gap: 8px;
@@ -408,7 +380,6 @@ h1{
 }
 
 .projects-container-link a{
-    height: 48px;
     background: #404040;
     padding: 12px 24px;
     gap: 8px;
@@ -425,8 +396,7 @@ h1{
     color: #404040;
 }
 .blogs{
-    width: 1920px;
-    height: 749px;
+    width: 100%;
     padding: 80px 40px;
     gap: 40px;
     display: flex;
@@ -435,8 +405,9 @@ h1{
     align-items: center;
 }
 .blogs-top{
-    width: 1296px;
-    height: 120px;
+    width: 100%;
+    max-width: 1296px;
+    gap: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -455,7 +426,6 @@ h1{
     font-weight: bold;
 }
 .blogs-top-link a{
-    height: 48px;
     background: #FFFFFF;
     padding: 12px 24px;
     gap: 8px;
@@ -472,23 +442,25 @@ h1{
     color: #FFFFFF;
 }
 .blogs-container{
-    width: 1296px;
-    height: 429px;
+    width: 100%;
+    max-width: 1296px;
+    gap: 24px;
     display: flex;
     justify-content: space-between;
 }
 .blog-card{
-    width: 416px;
-    height: 429px;
+    width: 100%;
     gap: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
+.blog-card img{
+    width: 100%;
+}
 .blog-card-text{
-    width: 416px;
-    height: 177px;
+    width: 100%;
     gap: 12px;
     display: flex;
     flex-direction: column;
@@ -506,6 +478,8 @@ h1{
     color: #404040;
 }
 .blog-card-date{
+    width: 100%;
+    gap: 24px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -527,8 +501,7 @@ h1{
     font-weight: 250;
 }
 .subscription{
-    width: 1920px;
-    height: 440px;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 0 40px;
@@ -536,28 +509,29 @@ h1{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true);
 }
 .subscription-container{
-    width: 1296px;
-    height: 440px;
+    width: 100%;
+    max-width: 1296px;
     display: flex;
     justify-content: space-between;
     gap: 24px;
+}
+.subscription-container img{
+    max-width: 526px;
 }
 .subscription-container-text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 746px;
-    height: 440px; 
+    width: 100%;
     gap: 24px; 
     padding: 80px 40px;
 }
 .subscription-top-design{
-    width: 666px;
-    height: 192px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
 }
 .subscription-top-design h1{
     font-size: 16px;
@@ -579,8 +553,7 @@ h1{
 }
 
 .subscription-bottom-design{
-    width: 666px;
-    height: 64px;
+    width: 100%;
     border-radius: 40px;
     border: 1px solid #FFFFFF;
     padding: 8px;
@@ -598,14 +571,16 @@ h1{
     gap: 2px;
     background: rgba(0,0,0,0);
     border: none;
-    width: 555px;
-    height: 100%;
+    width: 100%;
 }
 .subscription-label::placeholder{
     color: #FFFFFF;
     opacity: 1;
 }
 .email-enter a{
+    display: block;
+    width: 81px;
+    height: 48px;
     background: #FFFFFF;
     padding: 12px 24px;
     gap: 8px;
@@ -615,33 +590,40 @@ h1{
     text-decoration: none;
     color: #404040;
     font-weight: 500;
+    font-style: medium;
 }
 .email-enter a:hover{
-    background: #404040;
+    background: rgba(0,0,0,0.2);
     color: #FFFFFF;
 }
 .contact{
-    width: 1920px;
-    height: 544px;
+    width: 100%;
+    padding: 80px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #24140B;
 }
 .contact-container{
-    width: 1296px;
-    height: 384px;
+    width: 100%;
+    max-width: 1296px;
+    gap: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .footer-left{
-    width: 526px;
-    height: 384px;
+    width: 100%;
+    height: 100%;
+    max-width: 526px;
+    gap: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+}
+.footer-left-top{
+    width: 100%;
 }
 .footer-left-top h2{
     font-size: 16px;
@@ -657,13 +639,15 @@ h1{
     font-weight: bold;
 }
 .footer-left-middle{
+    width: 100%;
+    gap: 4px;
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
 }
 .footer-left-bottom{
-    width: 526px;
-    height: 164px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -671,10 +655,14 @@ h1{
     gap: 24px;
 }
 .footer-bottom-contact{
+    width: 100%;
     display: flex;
     gap: 12px;
 }
 .footer-link a{
+    display: block;
+    width: 48px;
+    height: 48px;
     padding: 12px;
     gap: 8px;
     border-radius: 1000px;
@@ -690,6 +678,7 @@ h1{
     color: #24140B;
 }
 .footer-bottom-email{
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -700,8 +689,7 @@ h1{
 }
 
 .footer-right{
-    width: 746px;
-    height: 384px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -710,12 +698,13 @@ h1{
     gap: 24px;
 }
 .footer-right-top{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 .frt{
-    width: 321px;
+    width: 100%;
     height: 64px;
     border-radius: 40px;
     border: 1px solid #FFFFFF;
@@ -735,15 +724,13 @@ h1{
     background: #24140B;
     border: none;
     width: 100%;
-    height: 100%;
 }
 .footer-name-phone-label::placeholder{
     color: #FFFFFF;
     opacity: 1;
 }
 .footer-right-middle{
-    width: 666px;
-    height: 64px;
+    width: 100%;
     border-radius: 40px;
     border: 1px solid #FFFFFF;
     padding: 8px;
@@ -762,15 +749,13 @@ h1{
     background: #24140B;
     border: none;
     width: 100%;
-    height: 100%;
 }
 .footer-email-label::placeholder{
     color: #FFFFFF;
     opacity: 1;
 }
 .footer-right-bottom{
-    width: 666px;
-    height: 136px;
+    width: 100%;
     border-radius: 40px;
     border: 1px solid #FFFFFF;
     padding: 8px;
@@ -789,15 +774,18 @@ h1{
     background: #24140B;
     border: none;
     width: 100%;
-    height: 100%;
+    min-height: 120px;
 }
 .footer-note-label::placeholder{
     color: #FFFFFF;
     opacity: 1;
 }
+.footer-right-enter{
+    width: 100%;
+}
 .footer-right-enter a{
     display: block;
-    width: 666px;
+    width: 100%;
     background: #FFFFFF;
     padding: 12px 24px;
     gap: 8px;
@@ -815,6 +803,32 @@ h1{
 }
 
 
+
+
+
+
+
+.btn{
+    display: block;
+    border: 1px solid var(--color-neutral-700); /* 手機版漢堡選單有一個外框 */
+    border-radius: 50%; /* 使外框變成圓形  */
+    margin-left: auto;
+  }
+
+
+
+
+@media (max-width: 375px) {
+    .d-md-block{
+        display: block;
+    }
+    .d-md-none{
+        display: none;
+}
+}
+.d-none{
+    display: none;
+}
 
 
 
