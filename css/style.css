@@ -828,20 +828,7 @@ h1{
 .d-none{
     display: none;
 }
-@media (max-width: 375px) {
-    .d-md-block{
-        display: block;
-    }
-    .d-md-none{
-        display: none;
-    }
-  .profile-content{
-    flex-direction: column-reverse;
-    padding-bottom: 24px;
-    padding-left: 12px;
-    padding-left: 12px;
-    }
-}
+
 @media (max-width: 1336px) {
   /* 調整內距和間距 */
   .subscription-container{
@@ -855,6 +842,9 @@ h1{
     padding-bottom: 24px;
     padding-left: 12px;
     padding-left: 12px;
+  }
+  .profile-img{
+    margin:0 40px;
   }
 }
 @media (max-width: 992px) {
@@ -881,10 +871,21 @@ h1{
   .subscription-top-design h2,
   .footer-left-top p { font-size: 40px; }
 }
-@media (max-width: 1160px) {
-  /* 調整內距和間距 */
-  .profile-img{
-margin:0 40px;
-  }
+@media (max-width: 768px) {
+    .d-md-block{
+        display: block;
+    }
+    .d-md-none{
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+
+  .profile-content{
+    flex-direction: column-reverse;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-left: 12px;
+    }
 }
   
