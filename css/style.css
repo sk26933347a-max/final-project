@@ -115,6 +115,7 @@ h1{
 }
 .profile{
     width: 100%;
+    min-width: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -824,34 +825,46 @@ h1{
   }
 
 
-
-
+.d-none{
+    display: none;
+}
 @media (max-width: 375px) {
     .d-md-block{
         display: block;
     }
     .d-md-none{
         display: none;
-}
-}
-.d-none{
-    display: none;
+    }
+  .profile-content{
+    flex-direction: column-reverse;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-left: 12px;
+    }
 }
 @media (max-width: 1336px) {
   /* 調整內距和間距 */
   .subscription-container{
     flex-direction: column;
-  },
+  }
 }
 @media (max-width: 1160px) {
   /* 調整內距和間距 */
   .profile-content{
-    flex-direction: column;
-  },
+    flex-direction: column-reverse;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-left: 12px;
+  }
 }
 @media (max-width: 992px) {
   /* 並排區塊改直向堆疊 */
-  .profile-content,
+  .profile-content{
+    flex-direction: column-reverse;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-left: 12px;
+  }
   .services-content-list,
   .blogs-container,
   .subscription-container,
@@ -872,6 +885,6 @@ h1{
   /* 調整內距和間距 */
   .profile-img{
 margin:0 40px;
-  },
+  }
 }
   
