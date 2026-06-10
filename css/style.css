@@ -514,7 +514,7 @@ h1{
     display: flex;
     justify-content: center;
     padding: 0 40px;
-
+       
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true);
 }
 .subscription-container{
@@ -524,8 +524,8 @@ h1{
     justify-content: space-between;
     gap: 24px;
 }
-.subscription-container-img{
-    object-fit: cover;
+.subscription-container img{
+    max-width: 100%;
 }
 .subscription-container-text{
     display: flex;
@@ -624,7 +624,7 @@ h1{
 .footer-left{
     width: 100%;
     height: 100%;
-    max-width: 526px;
+    
     gap: 24px;
     display: flex;
     flex-direction: column;
@@ -633,13 +633,6 @@ h1{
 }
 .footer-left-top{
     width: 100%;
-}
-.flt{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 24px;
 }
 .footer-left-top h2{
     font-size: 16px;
@@ -667,7 +660,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: start;
-
+    padding-top: 68px;
     gap: 24px;
 }
 .footer-bottom-contact{
@@ -836,11 +829,19 @@ h1{
     display: none;
 }
 
-
 @media (max-width: 1336px) {
   /* 調整內距和間距 */
+  .subscription,
+  .footer-right{
+    padding: 0;
+  }
   .subscription-container{
     flex-direction: column;
+  }
+  .subscription-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 1160px) {
@@ -860,35 +861,17 @@ h1{
   .profile-content{
     flex-direction: column-reverse;
     padding-bottom: 24px;
-    padding-right: 12px;
+    padding-left: 12px;
     padding-left: 12px;
   }
   .services-content-list,
-  .blogs-container{
-    flex-direction: column;
-  }
-  .subscription-container{
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-  }
-  .subscription-container-text{
-    padding: 40px 12px;
-  }
-
-  .contact-container{
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 12px;
-  }
+  .blogs-container,
+  .subscription-container,
+  .contact-container,
   .footer-right-top {
     flex-direction: column;
   }
-  .footer-left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
   /* 大標題縮小範例 */
   .profile-title h2 { font-size: 48px; }
   .services-content-title p,
@@ -897,7 +880,6 @@ h1{
   .subscription-top-design h2,
   .footer-left-top p { font-size: 40px; }
 }
-
 @media (max-width: 768px) {
     .d-md-block{
         display: block;
@@ -915,3 +897,4 @@ h1{
     padding-left: 12px;
     }
 }
+  
